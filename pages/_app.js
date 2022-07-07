@@ -1,7 +1,13 @@
-import '../styles/globals.css'
+import "../styles/globals.css";
+import { FavoriteContextProvider } from "../context/allContext";
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  return (
+    <FavoriteContextProvider>
+      {" "}
+      <Component {...pageProps} />
+    </FavoriteContextProvider>
+  );
 }
 
-export default MyApp
+export default MyApp;

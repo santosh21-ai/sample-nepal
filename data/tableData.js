@@ -1,0 +1,38 @@
+export const tableData = [
+  {
+    id: "000004",
+    img: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.2&w=160&h=160&q=80",
+    name: "Molly Sanders",
+    email: "mollysanders@gmail.com",
+    submitted_on: "Sept 28, 2021",
+    due: "Due in 3 days",
+    status: "Approved",
+  },
+  {
+    id: "000003",
+    img: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.2&w=160&h=160&q=80",
+    name: "Michael Roberts",
+    email: "michaelroberts@gmail.com",
+    submitted_on: "Sept 25, 2021",
+    due: "Due in 6 days",
+    status: "Approved",
+  },
+  {
+    id: "000002",
+    img: "https://images.unsplash.com/photo-1540845511934-7721dd7adec3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.2&w=160&h=160&q=80",
+    name: "Devin Childs",
+    email: "devinchilds@gmail.com",
+    submitted_on: "Sept 14, 2021",
+    due: "Due in 2 weeks",
+    status: "Pending",
+  },
+  {
+    id: "000001",
+    img: "https://images.unsplash.com/photo-1522609925277-66fea332c575?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.2&h=160&w=160&q=80",
+    name: "Frederick Nicholas",
+    email: "fredericknicholas@gmail.com",
+    submitted_on: "Sept 6, 2021",
+    due: "Due in 3 days",
+    status: "Rejected",
+  },
+];
