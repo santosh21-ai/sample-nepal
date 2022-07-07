@@ -55,7 +55,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-const dashboard = () => {
+const Dashboard = () => {
   const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false);
   return (
     <Layout>
@@ -64,4 +64,4 @@ const dashboard = () => {
   );
 };
 
-export default dashboard;
+export default Dashboard;

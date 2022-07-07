@@ -2,7 +2,7 @@ import React, { useContext, useState, useEffect } from "react";
 import Link from "next/link";
 import FavoritesContext from "../context/allContext";
 
-const registration = () => {
+const Registration = () => {
   const current = new Date();
   const favoriteCtx = useContext(FavoritesContext);
   const [firstName, setFirstName] = useState("");
@@ -273,4 +273,4 @@ const registration = () => {
   );
 };
 
-export default registration;
+export default Registration;

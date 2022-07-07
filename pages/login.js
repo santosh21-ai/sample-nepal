@@ -3,7 +3,7 @@ import Link from "next/link";
 import FavoritesContext from "../context/allContext";
 import { useRouter } from "next/router";
 
-const login = () => {
+const Login = () => {
   const router = useRouter();
   const userCtx = useContext(FavoritesContext);
   const [email, setEmail] = useState("");
@@ -114,4 +114,4 @@ const login = () => {
   );
 };
 
-export default login;
+export default Login;

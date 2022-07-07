@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 
-const reviewPdf = () => {
+const ReviewPdf = () => {
   const viewer = useRef(null);
 
   useEffect(() => {
@@ -25,4 +25,4 @@ const reviewPdf = () => {
     </div>
   );
 };
-export default reviewPdf;
+export default ReviewPdf;
