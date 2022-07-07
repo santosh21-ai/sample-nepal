@@ -4,7 +4,7 @@ import Layout from "../../components/dashboard/Layout";
 
 import Review from "../../components/dashboard/Review";
 
-const Review = () => {
+const ReviewApplication = () => {
   const router = useRouter();
   const { uid } = router.query;
   return (
@@ -14,4 +14,4 @@ const Review = () => {
   );
 };
 
-export default Review;
+export default ReviewApplication;
