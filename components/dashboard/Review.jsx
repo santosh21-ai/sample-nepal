@@ -2,8 +2,10 @@ import React, { useContext, useState, useEffect } from "react";
 import FavoritesContext from "../../context/allContext";
 import { PaperClipIcon } from "@heroicons/react/solid";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 const Review = (props) => {
+  const router = useRouter();
   const userCtx = useContext(FavoritesContext);
   const [userDetail, setUserDetail] = useState(userCtx.favorites);
   //   console.log(userCtx.favorites);
@@ -17,6 +19,7 @@ const Review = (props) => {
 
   const approvedCitizen = () => {
     userCtx.setUserStatus(props.uid);
+    router.push("/dashboard");
   };
 
   return (
@@ -127,13 +130,19 @@ const Review = (props) => {
               </div>
             </dl>
           </div>
-          <div className="rounded-md shadow flex justify-end ">
+          <div className="rounded-md shadow flex justify-end space-x-4">
             <a
               href="#"
               className="w-24 flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-1 md:text-base md:px-10"
               onClick={approvedCitizen}
             >
               Approve
+            </a>
+            <a
+              href="#"
+              className="w-50 flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-1 md:text-base md:px-10"
+            >
+              Generate QR Code
             </a>
           </div>
         </div>
