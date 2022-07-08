@@ -22,7 +22,7 @@ const features = [
   },
 ];
 
-const UserDashboard = () => {
+const NocIssue = () => {
   return (
     <UserLayout>
       <div className="py-4 bg-white">
@@ -106,7 +106,7 @@ const UserDashboard = () => {
                             aria-hidden="true"
                           />
                           <span className="ml-2 flex-1 w-0 truncate">
-                            Citizenship.pdf
+                            Citizenship_cirtificate.pdf
                           </span>
                         </div>
                         <div className="ml-4 flex-shrink-0">
@@ -134,4 +134,4 @@ const UserDashboard = () => {
   );
 };
 
-export default UserDashboard;
+export default NocIssue;

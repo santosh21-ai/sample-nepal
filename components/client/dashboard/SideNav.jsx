@@ -17,7 +17,7 @@ const subCategories = [
     href: "/user/uploadDocuments",
     icon: GlobeAltIcon,
   },
-  { name: "States", href: "#", icon: LightningBoltIcon },
+  { name: "NOC Issue", href: "/user/nocIssue", icon: LightningBoltIcon },
   { name: "Policy", href: "#", icon: ScaleIcon },
   { name: "Appoinments", href: "#", icon: AnnotationIcon },
 ];
