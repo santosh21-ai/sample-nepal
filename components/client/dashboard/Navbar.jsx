@@ -190,7 +190,7 @@ const Navbar = () => {
       </Transition.Root>
       <div className="relative  flex items-baseline justify-between pt-4 pb-6 border-b border-gray-200">
         <h1 className="text-4xl font-extrabold tracking-tight text-indigo-600">
-          Admin Dashboard
+          User Dashboard
         </h1>
 
         <div className="flex items-center">
@@ -238,7 +238,7 @@ const Navbar = () => {
             </Menu.Items>
           </Transition>
         </Menu> */}
-          <Link href="/login">userlogin</Link>
+          <Link href="/adminLogin">admin</Link>
           <button
             type="button"
             className="p-2 -m-2 ml-5 sm:ml-7 text-gray-400 hover:text-gray-500"

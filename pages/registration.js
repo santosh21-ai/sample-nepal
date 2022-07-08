@@ -1,8 +1,10 @@
 import React, { useContext, useState, useEffect } from "react";
 import Link from "next/link";
 import FavoritesContext from "../context/allContext";
+import { useRouter } from "next/router";
 
 const Registration = () => {
+  const router = useRouter();
   const current = new Date();
   const favoriteCtx = useContext(FavoritesContext);
   const [firstName, setFirstName] = useState("");
@@ -31,6 +33,7 @@ const Registration = () => {
       }/${current.getFullYear()}`,
     });
 
+    router.push("/user/dashboard");
     // console.log(favoriteCtx.favorites);
   };
 
@@ -139,6 +142,22 @@ const Registration = () => {
                         <option>Mexico</option>
                       </select>
                     </div>
+
+                    {/* <div className="col-span-6 sm:col-span-3">
+                      <label
+                        htmlFor="country"
+                        className="block text-sm font-medium text-gray-700"
+                      >
+                        Upload signature
+                      </label>
+                      <input
+                        type="file"
+                        name="email-address"
+                        id="email-address"
+                        autoComplete="email"
+                        className="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                      />
+                    </div> */}
 
                     <div className="col-span-6">
                       <label
@@ -254,9 +273,9 @@ const Registration = () => {
                   >
                     Submit
                   </button>
-                  <Link href="/dashboard">
+                  {/* <Link href="/dashboard">
                     <a>dashboard</a>
-                  </Link>
+                  </Link> */}
                 </div>
               </div>
             </form>

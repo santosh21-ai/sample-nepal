@@ -11,31 +11,18 @@ const Login = () => {
     console.log("login" + email);
     userCtx.setUser(email);
     console.log(userCtx.user);
-    router.push("/user/dashboard");
+    router.push("/dashboard");
   };
   return (
     <>
       <div className="min-h-screen bg-gray-100 flex flex-col justify-center px-6 lg:px-8">
         <div className=" flex justify-center font-bold text-4xl text-slate-800">
-          Nepal citizenship portal
+          Nepal citizenship portal Admin
         </div>
         <div className="sm:mx-auto sm:w-full sm:max-w-md">
           <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">
             Sign in
           </h2>
-          <p className="mt-2 text-center text-sm text-gray-600 max-w">
-            Don&apos;t have account?
-            <Link href="/registration">
-              <a className="font-medium text-indigo-600 hover:text-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-500">
-                Sign up
-              </a>
-            </Link>
-            {/* <Link href="/">
-            <a className="font-medium text-indigo-600 hover:text-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-500">
-              Home
-            </a>
-          </Link> */}
-          </p>
         </div>
 
         <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
@@ -46,13 +33,13 @@ const Login = () => {
                   htmlFor="email"
                   className="block text-sm font-medium text-gray-700"
                 >
-                  Email address
+                  Username
                 </label>
                 <div className="mt-1">
                   <input
-                    id="email"
-                    name="email"
-                    type="email"
+                    id="username"
+                    name="username"
+                    type="text"
                     autoComplete="email"
                     required
                     className=" "
@@ -79,24 +66,6 @@ const Login = () => {
                   />
                 </div>
               </div>
-
-              {/* <div>
-              <label
-                htmlFor="company-size"
-                className="block text-sm font-medium text-gray-700"
-              >
-                Company size
-              </label>
-              <div className="mt-1">
-                <select name="company-size" id="company-size" className="">
-                  <option value="">Please select</option>
-                  <option value="small">1 to 10 employees</option>
-                  <option value="medium">11 to 50 employees</option>
-                  <option value="large">50+ employees</option>
-                </select>
-              </div>
-            </div> */}
-
               <div>
                 <button
                   type="button"
