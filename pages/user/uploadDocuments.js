@@ -30,7 +30,7 @@ const UploadDocuments = () => {
                 <a
                   href="#"
                   className="w-24 flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-1 md:text-base md:px-10"
-                  onClick={() => setUploadStatus(true)}
+                  // onClick={() => setUploadStatus(true)}
                 >
                   Upload
                 </a>
@@ -50,7 +50,7 @@ const UploadDocuments = () => {
                 <a
                   href="#"
                   className="w-24 flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-1 md:text-base md:px-10"
-                  onClick={() => setUploadStatus(true)}
+                  // onClick={() => setUploadStatus(true)}
                 >
                   Upload
                 </a>
@@ -68,7 +68,7 @@ const UploadDocuments = () => {
                 <a
                   href="#"
                   className="w-24 flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-1 md:text-base md:px-10"
-                  onClick={() => setUploadStatus(true)}
+                  // onClick={() => setUploadStatus(true)}
                 >
                   Upload
                 </a>
