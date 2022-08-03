@@ -1,16 +1,17 @@
-import { Fragment, React, useState } from "react";
-import { Dialog, Transition } from "@headlessui/react";
-import { BellIcon } from "@heroicons/react/outline";
 import {
-  XIcon,
-  MenuIcon,
+  AnnotationIcon,
   CloudDownloadIcon,
   GlobeAltIcon,
   LightningBoltIcon,
+  MenuIcon,
   ScaleIcon,
-  AnnotationIcon,
   SearchIcon,
+  XIcon,
 } from "@heroicons/react/solid";
+import { Dialog, Transition } from "@headlessui/react";
+import { Fragment, React, useState } from "react";
+
+import { BellIcon } from "@heroicons/react/outline";
 import Link from "next/link";
 
 const navigation = {
@@ -120,7 +121,7 @@ const Navbar = () => {
             />
           </div>
         </div> */}
-        <div className=" w-2/5 flex border border-gray-400 rounded py-1 px-1 hidden  md:block md:flex">
+        <div className=" w-2/5 hidden md:flex border border-gray-400 rounded py-1 px-1">
           <span className="flex items-center justify-center  border-r-0  px-3 text-gray-700">
             <SearchIcon className="w-6 h-6 cursor-pointer" />
           </span>
@@ -129,18 +130,6 @@ const Navbar = () => {
             type="text"
             placeholder="Search"
           />
-        </div>
-
-        <div className="flex items-center space-x-4">
-          <Link href="/login">userlogin</Link>
-          <BellIcon className="h-7 w-7 text-gray-400" />
-          <div className="flex overflow-hidden">
-            <img
-              className="inline-block h-9 w-9 rounded-full ring-2 ring-white"
-              src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.2&w=160&h=160&q=80"
-              alt="AltImage"
-            />
-          </div>
         </div>
       </div>
     </>
