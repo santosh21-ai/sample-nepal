@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { Disclosure } from "@headlessui/react";
-import { MinusSmIcon, PlusSmIcon } from "@heroicons/react/solid";
 import {
+  MinusSmIcon,
+  PlusSmIcon,
   CloudDownloadIcon,
   GlobeAltIcon,
   LightningBoltIcon,
@@ -57,7 +58,7 @@ const SideNav = () => {
             key={category.name}
             className="text-center flex hover:bg-gray-200 px-2 h-9 py-2 hover:rounded hover:text-indigo-700"
           >
-            <category.icon className="h-5 w-5 text-gray-500 hover:text-indigo-500" />
+            <category.icon className="h-5 w-5 text-gray-500 hover:text-indigo-500 lg:block md:hidden" />
             <Link href={category.href}>
               <a className="ml-2">{category.name}</a>
             </Link>

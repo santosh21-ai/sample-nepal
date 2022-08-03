@@ -31,11 +31,11 @@ const Login = () => {
               Sign up
             </a>
           </Link>
-          <Link href="/">
+          {/* <Link href="/">
             <a className="font-medium text-indigo-600 hover:text-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-500">
               Home
             </a>
-          </Link>
+          </Link> */}
         </p>
       </div>
 

@@ -1,23 +1,34 @@
-import React, { useState } from "react";
-import { Disclosure } from "@headlessui/react";
-import { MinusSmIcon, PlusSmIcon } from "@heroicons/react/solid";
 import {
+  AnnotationIcon,
   CloudDownloadIcon,
+  DocumentAddIcon,
+  DownloadIcon,
   GlobeAltIcon,
   LightningBoltIcon,
+  MinusSmIcon,
+  PlusSmIcon,
   ScaleIcon,
-  AnnotationIcon,
 } from "@heroicons/react/solid";
+import {
+  DocumentDuplicateIcon,
+  IdentificationIcon,
+} from "@heroicons/react/outline";
+import React, { useState } from "react";
+
+import { Disclosure } from "@headlessui/react";
 import Link from "next/link";
 
 const subCategories = [
-  { name: "Dashboard", href: "/user/dashboard", icon: CloudDownloadIcon },
+  // { name: "Dashboard", href: "/user/dashboard", icon: CloudDownloadIcon },
   {
     name: "Upload documents",
     href: "/user/uploadDocuments",
     icon: GlobeAltIcon,
   },
-  { name: "NOC Issue", href: "/user/nocIssue", icon: LightningBoltIcon },
+  { name: "NOC", href: "/user/nocIssue", icon: LightningBoltIcon },
+  { name: "Citizenship", href: "/user/citizenship", icon: IdentificationIcon },
+  { name: "Documents", href: "/user/documents", icon: DocumentDuplicateIcon },
+  { name: "Downloads", href: "/user/downloads", icon: CloudDownloadIcon },
   { name: "Policy", href: "#", icon: ScaleIcon },
   { name: "Appoinments", href: "#", icon: AnnotationIcon },
 ];

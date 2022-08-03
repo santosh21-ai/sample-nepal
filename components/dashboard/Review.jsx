@@ -1,7 +1,8 @@
-import React, { useContext, useState, useEffect } from "react";
+import React, { useContext, useEffect, useState } from "react";
+
 import FavoritesContext from "../../context/allContext";
-import { PaperClipIcon } from "@heroicons/react/solid";
 import Link from "next/link";
+import { PaperClipIcon } from "@heroicons/react/solid";
 import { useRouter } from "next/router";
 
 const Review = (props) => {
@@ -146,7 +147,6 @@ const Review = (props) => {
             </a>
           </div>
         </div>
-        ;
       </div>
     </>
   );
